@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+
+    --component_bg: white;
+  --component_light_bg: #F6F8F9;
+  --shadow: 0 1px 4px rgb(0 0 0 / 12%), 0 1px 6px rgb(0 0 0 / 24%);
+  --shadow_inset: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  --border_shadow_lg: rgba(0, 0, 0, 0.388);
+  --border_shadow_sm: rgba(0, 0, 0, 0.177);
+  --border_light: #E6EFFD;
+  --padding_app_lg: 86px;
+  --padding_app_sm: 35px;
+  --padding_app_xs: 15px;
+
+
+  /*--------------------default--------------------*/
+  --stroke_color: #4B4B4B;
+  --stroke_secundary_color: #737373;
+  --reverse_stroke_color: white;
+  --stroke_disabled: #BABABA;
+
+  --text_disabled: #F2F2F2;
+  --border_color: #737373;
+
+  /*--------------------utils--------------------*/
+  --success_color: #069169;
+  --success_bg_color: #CDE6DF;
+
+  --error_color: #A80521;
+  --error_dark_color: #B30937;
+  --error_bg_color: #EECDD2;
+  --error_bg_light_color: #FFE7EA;
+
+  --warning_color: #FFAB00;
+  --warning_dark_color: #D37F00;
+  --warning_bg_color: #FFEECC;
+  --warning_secondary_color: #8B5D13;
+
+  --warning_dark_bg_color: #FFEECC;
+  --warning_dark_color: #8B5D13;
+
+  --info_color: #3366CC;
+  --info_dark_color: #002B50;
+  --info_bg_color: #E6EFFD;
+
+  --blank_color: #000000;
+  --blank_bg_color: #F2F2F2;
+
+  --aqua_color: #009082;
+  --aqua_bg_color: #CCF2EE;
+
+  --purple_color: #5336C9;
+  --purple_dark_color: #3F2E87;
+  --purple_bg_color: #DDD7F4;
+  --purple_bg_light_color: #E6DFFF;
+
+  --orange_color: #F3561F;
+  --orange_bg_color: #FFDBCD;
+  --orange_bg_light_color: #FFE3D9;
+
+  --gov_co_color: #3366CC;
+
+  --green_color: #0D684B;
+  --green_light_color: #E4F2ED;
+
+  --dark_aqua_color: #005B53;
+  --light_aqua_color: #CAFFF9;
+
+  --deep_blue: #195364;
+  --blue_dark: #0D578C;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+
+
+    --component_bg: white;
+  --component_light_bg: #F6F8F9;
+  --shadow: 0 1px 4px rgb(0 0 0 / 12%), 0 1px 6px rgb(0 0 0 / 24%);
+  --shadow_inset: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  --border_shadow_lg: rgba(0, 0, 0, 0.388);
+  --border_shadow_sm: rgba(0, 0, 0, 0.177);
+  --border_light: #E6EFFD;
+  --padding_app_lg: 86px;
+  --padding_app_sm: 35px;
+  --padding_app_xs: 15px;
+
+
+  /*--------------------default--------------------*/
+  --stroke_color: #4B4B4B;
+  --stroke_secundary_color: #737373;
+  --reverse_stroke_color: white;
+  --stroke_disabled: #BABABA;
+
+  --text_disabled: #F2F2F2;
+  --border_color: #737373;
+
+  /*--------------------utils--------------------*/
+  --success_color: #069169;
+  --success_bg_color: #CDE6DF;
+
+  --error_color: #A80521;
+  --error_dark_color: #B30937;
+  --error_bg_color: #EECDD2;
+  --error_bg_light_color: #FFE7EA;
+
+  --warning_color: #FFAB00;
+  --warning_dark_color: #D37F00;
+  --warning_bg_color: #FFEECC;
+  --warning_secondary_color: #8B5D13;
+
+  --warning_dark_bg_color: #FFEECC;
+  --warning_dark_color: #8B5D13;
+
+  --info_color: #3366CC;
+  --info_dark_color: #002B50;
+  --info_bg_color: #E6EFFD;
+
+  --blank_color: #000000;
+  --blank_bg_color: #F2F2F2;
+
+  --aqua_color: #009082;
+  --aqua_bg_color: #CCF2EE;
+
+  --purple_color: #5336C9;
+  --purple_dark_color: #3F2E87;
+  --purple_bg_color: #DDD7F4;
+  --purple_bg_light_color: #E6DFFF;
+
+  --orange_color: #F3561F;
+  --orange_bg_color: #FFDBCD;
+  --orange_bg_light_color: #FFE3D9;
+
+  --gov_co_color: #3366CC;
+
+  --green_color: #0D684B;
+  --green_light_color: #E4F2ED;
+
+  --dark_aqua_color: #005B53;
+  --light_aqua_color: #CAFFF9;
+
+  --deep_blue: #195364;
+  --blue_dark: #0D578C;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
